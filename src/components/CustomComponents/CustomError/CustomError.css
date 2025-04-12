@@ -1,0 +1,9 @@
+.swift-custom-error {
+  color: var(--text-color);
+  font-family: "Open Sans";
+  font-size: var(--font-small);
+  font-style: italic;
+  font-weight: var(--font-weight-heavy);
+  line-height: normal;
+  letter-spacing: -0.65px;
+}

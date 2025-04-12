@@ -1,0 +1,254 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+body.modal-open {
+  overflow: hidden;
+}
+.swift-folios-research-back-office-main {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.swift-folios-research-back-office-main-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  justify-content: center;
+  font-weight: 600;
+  color: #011627;
+  font-size: 14px;
+  gap: 15px;
+  width: auto;
+}
+
+.swift-folios-research-back-office-main-header {
+  font-weight: 700;
+  font-size: 16px;
+}
+.swift-folios-research-back-office-container {
+  border: 1px solid #e8e8e8;
+  border-radius: 15px;
+  width: 910px;
+  padding: 10px;
+}
+.swift-folios-research-row1 {
+  box-sizing: border-box;
+  width: auto;
+  max-width: 350px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  padding: 2px 0 2px 15px;
+  border: 0.5px solid #e8e8e8;
+  align-items: center;
+  border-radius: 41px;
+  gap: 15px;
+}
+.swift-folios-research-back-office-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.swift-folios-research-back-office-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  font-size: 12px;
+  cursor: pointer;
+  height: 25px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 35px;
+  font-weight: 600;
+  opacity: 0px;
+  letter-spacing: -5%;
+  line-height: 16px;
+  padding: 5px 15px;
+}
+.swift-folios-research-back-office-row1 {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+}
+.swift-folios-back-office-buttons-container {
+  display: flex;
+  gap: 10px;
+}
+.swift-folios-back-office-buttons-containe > button {
+  width: 35px;
+  height: 16px;
+  font-size: 12px;
+}
+
+.swift-folios-back-office-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 500px;
+  border-radius: 15px;
+  /* width: 910px; */
+}
+.swift-folios-back-office-posts-container::-webkit-scrollbar {
+  width: 8px;
+}
+.swift-folios-back-office-posts-container::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
+.swift-folios-back-office-research-row2 {
+  padding: 15px;
+  background: #ffffff;
+  letter-spacing: -5%;
+  border-radius: 10px;
+  display: flex;
+  max-height: 250px;
+}
+
+/* Video Post Variation */
+.swift-folios-back-office-research-row2.with-video {
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Post Content Sub-Container */
+.swift-folios-back-office-row2-sub-container {
+  flex: 1;
+  min-width: 414px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 12px; */
+}
+
+.swift-folios-research-back-office-row2-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #666;
+  padding: 0 15px;
+  z-index: 1;
+  margin-bottom: -10px;
+}
+
+.swift-folios-research-back-office-row2-date > span {
+  font-style: italic;
+}
+
+.swift-folios-research-back-office-row2-header {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.swift-folios-research-back-office-row2-text {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.swift-folios-research-file-container {
+  display: flex;
+  align-items: center;
+}
+
+.swift-folios-research-file-download-button {
+  background: none;
+  border: none;
+  color: #011627;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.back-office-read-more-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.swift-folios-back-office-read-more-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.down-arrow-icon {
+  transition: transform 0.3s ease;
+  width: 16px;
+  height: 16px;
+}
+
+.down-arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* Video Preview Container */
+.swift-folios-research-back-office-video-preview-container {
+  position: relative;
+  width: 365px;
+  height: 204px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.swift-folios-back-office-edit-post-modal,
+.swift-folios-back-office-edit-stock-modal,
+.swift-folios-back-office-update-post-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px !important;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  width: 95vw;
+  height: 96vh;
+  background-color: white;
+}
+.stock-edit-modal {
+  width: 65vw;
+  height: 60vh;
+}
+.swift-folios-research-back-office-row3 {
+  font-size: 10px;
+}
+
+.swift-folios-research-row3-container
+  > .swift-folios-research-back-office-fund-name {
+  font-weight: 600;
+}
+.swift-folios-research-back-office-fund-price {
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -5%;
+}
+.swift-folios-research-back-office-fund-price {
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -5%;
+}
+.swift-folios-research-back-office-fund-change-container {
+  display: flex;
+  justify-content: space-between;
+}
+.swift-folios-research-back-office-value-change,
+.swift-folios-research-back-office-per-change {
+  color: #00d72f;
+}
+
+.swift-folios-research-back-office-row3-container {
+  display: flex;
+  gap: 5px;
+  font-size: 10px;
+}

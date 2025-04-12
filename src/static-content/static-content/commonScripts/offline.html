@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Swiftfolios- Machine Aided Intelligent Investing</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="index.css">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+   <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   <meta property="og:description" content="Machine Aided Intelligent Investing" />
+   <meta property="og:url" content="http://www.swiftfolios.co.uk" />
+   <meta property="og:image" itemprop="image" content="" />
+   <meta property="og:image:type" content="image/png">
+   <style>
+      .firstpart {
+         display: flex;
+         margin: auto;
+         flex-direction: column;
+         justify-content: center;
+         height: 95vh;
+         align-items: center;
+      }
+
+      .reason {
+         display: flex;
+         position: relative;
+         font-size: 2rem;
+         color: #011627b3;
+         letter-spacing: -1.5px;
+         font-weight: 400;
+         margin: auto;
+         text-align: center;
+      }
+
+      .firstpart img {
+         margin-bottom: 5%;
+      }
+
+      @media screen and (max-width: 1000px) {
+         .reason {
+            display: flex;
+            position: relative;
+            font-size: 1.5rem;
+            color: #011627b3;
+            letter-spacing: -1px;
+            font-weight: 500;
+            margin: auto;
+            text-align: left;
+            width: 70%;
+            margin-left: 5%;
+         }
+
+         .firstpart {
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 90vh;
+            align-items: baseline;
+         }
+
+         .firstpart img {
+            margin-bottom: 30%;
+            width: 50%;
+         }
+      }
+   </style>
+</head>
+
+<body>
+   <div id="header"></div>
+   <div class="firstpart">
+      <div class="reason">Thank you very much for your interest.<br><br>We are working really hard to
+         bring the product to you.</div>
+      <img src="assets/wip.gif">
+   </div>
+   <div id="footer"></div>
+
+</body>
+
+</html>
+
+<script>
+   AOS.init();
+</script>
+<script>
+   $(document).ready(function () {
+      $.ajax({
+         type: "GET",
+         "headers": {
+            "accept": "application/json",
+            "Access-Control-Allow-Origin": "*"
+         },
+         url: "header.html",
+         data: {},
+         success: function (data) {
+            console.log(data);
+            $('#header').html(data);
+         }
+      });
+   });
+</script>
+<script>
+   $(document).ready(function () {
+      $.ajax({
+         type: "GET",
+         "headers": {
+            "accept": "application/json",
+            "Access-Control-Allow-Origin": "*"
+         },
+         url: "footer.html",
+         data: {},
+         success: function (data) {
+            console.log(data);
+            $('#footer').html(data);
+         }
+      });
+   });
+</script>

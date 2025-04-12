@@ -1,0 +1,239 @@
+.back-office-stock-edit-header{
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.swift-folios-research-back-office-stock-edit-form-container{
+  height:100%;
+  width: 100%;
+}
+.swift-folios-research-back-office-loader {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  gap: 30px;
+  width: auto;
+}
+.back-office-stock-edit-header>button{
+  background:none;
+  border: none;
+  cursor: pointer;
+}
+.stock-edit-submit-button{
+  margin-top: 10px;
+}
+.back-office-stock-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+.stock-container .stock__search__icons__wrapper {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--light-box-shadow);
+  }
+  
+  .stock-container .stock__search {
+    width: 450px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+  }
+  
+  .stock-container .stock__search .stock__search__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0px 0 15px;
+  }
+  
+  .stock-container .stock__search .stock__search__icon img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+  
+  .stock-container .stock__search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 90%;
+    padding-left: 5px;
+    color: var(--font-primary);
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase !important;
+    background-color: transparent;
+  }
+  
+  .stock-container .stock__search input::placeholder {
+    color: #888888;
+    text-transform: capitalize !important;
+  }
+  
+  .stock-container .stock__search .stock__suggestions {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0%;
+    margin-top: 3px;
+    z-index: 10000;
+    border-radius: 5px;
+    max-height: 350px;
+    /* overflow-y : scroll; */
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 5%);
+    /* display: none; */
+  }
+  
+  .stock__suggestions .suggestion__stocks {
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+  
+  .stock-container .stock__search .stock__suggestions.active {
+    display: block;
+  }
+  
+  .stock-container .stock__search .stock__suggestions .search__loader {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stock-container .stock__search .stock__suggestions .search__loader p {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    margin-top: 5px !important;
+    padding: 0 !important;
+    display: flex;
+    color: var(--font-primary);
+  }
+  
+  .stock-container .stock__search .stock__suggestions p {
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f5f5f5;
+    color: var(--font-primary);
+    margin: 0;
+  }
+  
+  .suggestion__stocks .suggestion__empty {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  
+  .stock-container .stock__search .stock__suggestions p.active {
+    background-color: #dbd9d9;
+  }
+  
+  .stock-container .stock__search .stock__suggestions p span.search__highlight {
+    /* color: #c5c5c5; */
+    font-weight: 500;
+  }
+  
+  .stock-container .stock__search .stock__suggestions p>span:nth-child(1) {
+    flex: 4;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--font-primary);
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .stock-container .stock__search .stock__suggestions p>span:nth-child(2) {
+    flex: 5;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--font-primary);
+  }
+  
+  .stock-container .stock__search .stock__suggestions p>span:nth-child(3) {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: var(--font-primary);
+  }
+  
+  .stock-container .stock__search .stock__suggestions p:hover {
+    background-color: #f9f9f9;
+  }
+  
+  
+  .selected-stocks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+  }
+  
+  .selected-stock-item {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color:white;
+    border: 1px solid #E8E8E8;
+    letter-spacing: -0.8px;
+    border-radius: 45px;
+    padding: 5px 10px;
+  }
+  
+  .selected-stock-item span {
+    margin-right: 5px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 10px;
+    color: #011627;
+    font-weight: 500;
+  }
+  
+  .remove-stock-button {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #E8E8E8;
+    border-radius: 50%;
+    color: #E8E8E8;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  
+  .remove-stock-button:hover {
+    color: #6c6767;
+    border-color:#6c6767 ;
+  }
+
+  .swift-folios-research-back-office-form-submit-button {
+    border-radius: 35px;
+    backdrop-filter: blur(2px);
+    width: 122px;
+    height: 35px;
+    flex-shrink: 0;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+  }

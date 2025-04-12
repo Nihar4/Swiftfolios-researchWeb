@@ -1,0 +1,254 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.swift-folios-research-main-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swift-folios-research-main-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -5%;
+}
+.swift-folios-research-main-header-search {
+  width: 380px;
+  height: 36px;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 41px;
+  color: #011627;
+  padding: 8px 17px;
+}
+.swift-folios-research-container {
+ 
+  box-sizing: border-box;
+  margin: 27px 0;
+  width: 887px;
+  height: auto;
+  border: 0.5px solid #e8e8e8;
+  padding: 16px;
+  border-radius: 10px;
+}
+.swift-folios-research-container-with-video {
+  display: flex;
+  box-sizing: border-box;
+  margin: 27px 0;
+  width: 887px;
+  height: auto;
+  border: 0.5px solid #e8e8e8;
+  padding: 16px;
+  border-radius: 10px;
+}
+.swift-folios-research-front-row1 {
+  box-sizing: border-box;
+  width:fit-content;
+  max-width: 350px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  padding: 2px 15px;
+  border: 0.5px solid #e8e8e8;
+  align-items: center;
+  border-radius: 41px;
+  gap: 15px;
+}
+.swift-folios-research-fund-name,
+.swift-folios-research-fund-price {
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -5%;
+}
+.swift-folios-research-value-change,
+.swift-folios-research-per-change {
+  color: #00d72f;
+}
+
+
+.swift-folios-research-updated-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 500px;
+  width: 850px;
+}
+.swift-folios-research-updated-post-container::-webkit-scrollbar{
+  width: 8px;
+}
+.swift-folios-research-updated-post-container::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+}
+.swift-folios-research-row2 {
+  font-size: 12px;
+  line-height: 16px;
+  max-height: 250px;
+  height: auto;
+  gap: 20px;
+  border-radius: 10px;
+  letter-spacing: -5%;
+  padding: 15px 9px 0 9px;
+}
+.swift-folios-research-row2.with-video {
+  box-sizing: border-box;
+  /* width: 840px; */
+  display: flex;
+  padding: 10px;
+  gap: 70px;
+}
+.swift-folios-research-original-post-sub-container,
+.swift-folios-research-updated-post-sub-container {
+  width: 414px;
+}
+.swift-folios-research-row2-header {
+  font-weight: 700;
+  color: #011627;
+}
+
+.swift-folios-research-row2-date {
+  color: #011627b2;
+  font-style: italic;
+}
+.back-office-read-more-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.back-office-read-more-content > img {
+  cursor: pointer;
+}
+.swift-folios-research-row2-text{
+  color: #011627;
+}
+.visit{
+  color: #011627b2;
+}
+.down-arrow-icon {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.down-arrow-icon.rotate {
+  transform: rotate(180deg);
+}
+.swift-folios-back-office-read-more-button {
+  border: none;
+  background: none;
+  font-size: 11px;
+  font-weight: 400;
+}
+.swift-folios-research-row3 {
+  display: flex;
+  font-size: 10px;
+  gap: 15px;
+}
+.swift-folios-research-row3-container {
+  box-sizing: border-box;
+  width: 111px;
+  height: 64px;
+  padding: 12px;
+  border: 0.5px solid #e8e8e8;
+  border-radius: 10px;
+  line-height: 14px;
+  box-shadow: 0px 0px 4px 0px #e8e8e8;
+}
+.swift-folios-research-row3-container > .swift-folios-research-fund-name {
+  font-weight: 600;
+}
+video {
+  height: 204px;
+  width: 365px;
+  padding: 20px 0 0 0;
+}
+.swift-folios-research-fund-change-container {
+  display: flex;
+  justify-content: space-between;
+}
+.swift-folios-research-file-container {
+  display: flex;
+  font-size: 11px;
+  padding: 22px 0;
+  align-items: center;
+}
+.swift-folios-research-file img {
+  cursor: pointer;
+}
+.swift-folios-research-file-download-button {
+  text-decoration: none;
+  color: #011627;
+  padding: 8px 15px 0 15px;
+}
+.swift-folios-research-sub-container {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+.swift-folios-research-main-top {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-bottom: 69px;
+}
+.react-quill-group {
+  margin-bottom: 15px;
+}
+.swift-folios-research-top-text {
+  width: 315px;
+  height: 32px;
+  color: #011627;
+  font-weight: 600;
+  letter-spacing: -5%;
+  line-height: 16px;
+  font-size: 12px;
+}
+.swift-folios-research-pay-button {
+  width: 122px;
+  height: 35px;
+  background-color: #e8e8e8;
+  border: none;
+  border-radius: 57px;
+  font-weight: 600;
+  opacity: 0px;
+  letter-spacing: -5%;
+  line-height: 16px;
+}
+.swift-folios-research-loader {
+  align-items: center;
+  
+  display: flex;
+  height: 94vh;
+  padding-left: 50px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+}
+.swift-folios-research-loader p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+
+
+.read-full-button {
+  background: none;
+  border: none;
+}
+.read-full-button-group {
+  display: flex;
+}
+.arrow-up,
+.arrow-down {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-down {
+  transform: rotate(0deg);
+}

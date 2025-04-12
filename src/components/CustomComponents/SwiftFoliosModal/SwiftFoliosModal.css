@@ -1,0 +1,14 @@
+.swift-modal {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.swift-modal .swift-modal-box {
+    width: fit-content;
+    height: fit-content;
+}

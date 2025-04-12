@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.3px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Manrope', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+}
+
+:root {
+    --main-blue: #470985;
+    --main-green: #36BEAD;
+    --main-green-light: #36beae35;
+    --main-red: #FF3888;
+    --main-red-light: #ff388835;
+    --main-brand: #3179F5;
+    --light-grey: #EAEAEA;
+    --medium-grey: #BBBBBB;
+    --light-white: #FEFEFE;
+    --white: #FFFFFF;
+    --font-primary: rgba(1, 22, 39, 1);
+    --font-secondary: #666666;
+    --shadow-primary: #F2F2F2;
+    --shadow-code: 0px 0px 5px #f5f5f5;
+    --shadow-code-box: 0px 0px 5px #e2e2e2;
+    --text-color: rgba(1, 22, 39, 1);
+    --text-color-blur: rgba(1, 22, 39, 1);
+    --green-color: #67D098;
+    --light-text-color: #CCCCCC;
+    --light-box-shadow: 0px 0px 2px #fafafa
+}
+
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e8e8e8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e8e8e8;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--white) inset;
+    -webkit-text-fill-color: var(--font-primary);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+*:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}

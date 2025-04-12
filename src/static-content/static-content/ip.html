@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Swiftfolios- Machine Aided Intelligent Investing</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./static-content/ip.css">
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+   <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <meta property="og:description" content="Machine Aided Intelligent Investing" />
+   <meta property="og:url" content="http://www.swiftfolios.co.uk" />
+   <meta property="og:image" itemprop="image" content="" />
+   <meta property="og:image:type" content="image/png">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="./ip.css">
+   <link rel="stylesheet" href="./commonScripts/header.css">
+</head>
+
+<body>
+   <div class="webheader">
+      <div class="left">
+          <img onclick="openmenu()" src="https://www.swiftfolios.co.uk/static-content/commonScripts/assets/menu.svg">
+          <div class="brand-logo" onclick="homepage()"><span>Swift</span>folios</div>
+          <img id="closemenu" onclick="closemenu()" src="https://www.swiftfolios.co.uk/static-content/commonScripts/assets/close.svg">
+          <ul id="menulist">
+              <li><i>swift</i>Engine</li>
+              <!-- <li>Accounts</li>
+              <li>Portfolios</li>
+              <li>Costs</li> -->
+              <!-- <li>Research Platform</li> -->
+              <!-- <li>Help</li>
+              <li>Education</li> -->
+          </ul>
+      </div>
+      <div class="right">
+          <div class="signup"><a href="https://www.swiftfolios.co.uk/static-content/commonScripts/offline.html">Create Account</a></div>
+          <div class="login"><a href="https://www.swiftfolios.co.uk/static-content/commonScripts/offline.html">Login</a></div>
+      </div>
+  </div>
+   <div class="firstpart">
+      <div class="firstpartone">
+         <div class="firstpartleftone">Machine Aided Intelligent Investing<br>with multi-asset <span
+               id="revolvingtext1">regular ETF</span><span id="revolvingtext2">ESG ETF</span>portfolios</div>
+         <div class="firstpartrightone">
+            <div class="firstpartrightoneleft">5</div>
+            <div class="firstpartrightoneright">risk profiles to choose from to meet your return expectations.</div>
+         </div>
+      </div>
+      <div class="firstparttwo">
+         <div class="firstpartlefttwo">Transparent intelligence, control, and automation to
+            fuel<span>Outperformance</span></div>
+         <div class="firstpartrighttwo">Built on our ground breaking deep learning AI/ML
+            model<span><i>swift</i>Engine<img src="./images/registered.svg"></span></div>
+      </div>
+      <div class="firstpartthree">
+         <div class="firstpartthreetop">Soon on</div>
+         <div class="firstpartthreebottom">
+            <div class="firstpartthreebottominside"><img src="./images/gplay.svg">Google Play Store</div>
+            <div class="firstpartthreebottominside" style="margin-left: 20px;"><img src="./images/astore.svg"> Apple App
+               Store</div>
+         </div>
+      </div>
+      <div class="firstpartfour">Your capital is at risk. Fees apply.</div>
+   </div>
+
+   <div class="secondpart">
+      <div class="secondpartleft">
+         <h1>Taking advantage of AI revolution</h1>
+         <p>Use our proprietary developed Recurrent Neural Network (<b>RNN</b>)
+            deep learning model using <b>Google Machine Learning Architecture <img src="./images/newwindow.svg"></b>
+            to assist your Tactical Asset Allocation.
+            <br><br>
+            The model simulates
+            a human brain without biases to <b>predict</b> probable future price
+            action and <b>optimise</b> asset allocation while our systems does
+            the heavy lifting work of <b>best execution</b>. Additionally, the
+            decision to <strong> switch off and switch on</strong> use of the model is fully
+            on you.<br><br>
+            Use of ETFs to express asset allocation views will also
+            help negate the well recognised <strong>Negative Manager Selection
+               Effect.</strong><img src="./images/newwindow.svg"><br>
+            <span>(overall likely underperformance caused by use of active funds)</span><br><br>
+            Better still, use ESG ETFs to promote responsible capitalism while
+            not compromising on returns.
+         </p>
+      </div>
+      <div class="secondpartright">
+         <div class="secondpartrighttop">
+            <h2>Try out our risk profiler to know which portfolio suits your needs.</h1>
+               <a href="https://www.swiftfolios.co.uk/static-content/commonScripts/offline.html">Start Now</a>
+         </div>
+         <div class="secondpartrightbottom">
+            <div class="secondpartrightbottombox" data-aos="fade-up" data-aos-delay="100">
+               <p>Fully regulated, our Machine Learning execution
+                  systems have in-built safety parameters which
+                  do now allow deviation which might have detrimental
+                  consequences. </p>
+               <h3>Safe</h3>
+            </div>
+            <div class="secondpartrightbottombox" data-aos="fade-up" data-aos-delay="150">
+               <p>All investment portfolios are presented relative
+                  to their respective benchmarks which allows
+                  for transparent measurement of both strategic
+                  and tactical asset allocation. </p>
+               <h3>Measurable</h3>
+            </div>
+            <div class="secondpartrightbottombox" data-aos="fade-up" data-aos-delay="200">
+               <p>Deep learning used by <b><i>swift</i>Engine</b> has been
+                  specifically designed to work with capital
+                  markets. With ground breaking research, the
+                  engine has capability to produce significantly
+                  accurate predictions. </p>
+               <h3>Innovative</h3>
+            </div>
+            <div class="secondpartrightbottombox" data-aos="fade-up" data-aos-delay="250">
+               <p>From static asset allocation to managed portfolios,
+                  Robo Advisory has been used as a <b>misnomer</b>. <b><i>Swift</i>folios</b>
+                  brings to you true asset allocation, where right from
+                  allocation to execution could be automated just with
+                  a click. </p>
+               <h3><i>true</i> Robo Advisory</h3>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="rect3" id="rect3">
+      <div class="rect3left">
+         <div class="rect3title"><i>#swift</i>EnginePortfolios<span>ETFs or ESG ETFs</span></div>
+         <div class="rect3body">
+            <div class="recthreeleft">
+               <div class="rect3lower">
+                  <div class="chartarea">
+                     <div class="charttext" id="charttext"></div>
+                     <div class="chartarea">
+                        <canvas id="myChart"></canvas>
+                     </div>
+                  </div>
+                  <div class="profiles">
+                     <div class="profilebox" id="profile1" onclick="profile1()">
+                        <div class="profileboxright">
+                           <div>Cautious Profile</div>
+                           <div class="profileboxrightage">Mixed Asset <b
+                                 style="font-weight: 900;font-size: 13px;">0-20% Equity</b></div>
+                           <div><span style="color: violet;font-weight: 900;">Violet</span> Portfolio</div>
+                        </div>
+                     </div>
+                     <div class="profilebox" id="profile2" onclick="profile2()">
+                        <div class="profileboxright">
+                           <div>Moderately Cautious Profile</div>
+                           <div class="profileboxrightage">Mixed Asset <b
+                                 style="font-weight: 900;font-size: 13px;">20-35% Equity</b></div>
+                           <div><span style="color: #b66ced;font-weight: 900;">Indigo</span> Portfolio</div>
+                        </div>
+                     </div>
+                     <div class="profilebox" id="profile3" onclick="profile3()">
+                        <div class="profileboxright">
+                           <div>Moderate Profile</div>
+                           <div class="profileboxrightage">Mixed Asset <b
+                                 style="font-weight: 900;font-size: 13px;">35-60% Equity</b></div>
+                           <div><span style="color: #00a8ff;font-weight: 900;">Blue</span> Portfolio</div>
+                        </div>
+                     </div>
+                     <div class="profilebox" id="profile4" onclick="profile4()">
+                        <div class="profileboxright">
+                           <div>Moderately Adventurous Profile</div>
+                           <div class="profileboxrightage">Mixed Asset <b
+                                 style="font-weight: 900;font-size: 13px;">60-85% Equity</b></div>
+                           <div><span style="color: #67d098;font-weight: 900;">Green</span> Portfolio</div>
+                        </div>
+                     </div>
+                     <div class="profilebox" id="profile5" onclick="profile5()">
+                        <div class="profileboxright">
+                           <div>Adventurous Profile</div>
+                           <div class="profileboxrightage">Mixed Asset <b
+                                 style="font-weight: 900;font-size: 13px;">85-100% Equity</b></div>
+                           <div><span style="color: #ffca00;font-weight: 900;">Yellow</span> Portfolio</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="rect3leftdisclaimer">Equivalent ESG ETFs will be used for ESG portfolios as much as available.
+         </div>
+      </div>
+      <div class="recthreeright">
+         <div class="rect3bottom">
+            <video autoplay muted loop>
+               <source src="./videos/DIY.mp4" type="video/mp4">
+               <source src="movie.ogg" type="video/ogg">
+               Your browser does not support the video tag.
+            </video>
+            <div class="videotext">Analyse . Activate . Execute</div>
+         </div>
+         <div class="rect3bottombottom"><img src="./images/risk.svg"><a href="https://www.swiftfolios.co.uk/static-content/commonScripts/offline.html">Not Sure? Try Our Risk Profiler</a>
+         </div>
+      </div>
+   </div>
+   <div class="fourthpart">
+      <div class="fourthpartleft">
+         <div class="fourthpartbottomtitle" data-aos="fade-down">Simple execution.</div>
+         <div class="fourthpartbottom" data-aos="fade-up" data-aos-delay="200">
+            <div class="circles">
+               <span class="dot" id="circle1"></span>
+               <span class="dot" id="circle2"></span>
+               <span class="dot" id="circle3"></span>
+               <span class="dot" id="circle4"></span>
+               <span class="dot" id="circle5"></span>
+               <span class="dot" id="circle6"></span>
+               <span class="dot" id="circle7"></span>
+            </div>
+            <div class="statictext">How it works?</div>
+            <div class="textslider">
+               <div id="text1" class="textslidertop">
+                  <span style="font-size:40px; font-weight: 900;line-height:0.9;">1</span>Find your risk profile.
+               </div>
+               <div id="texttwo1" class="textsliderbottom">Finding the correct risk profile is probably the most
+                  important step in a confortable wealth creation journey.</div>
+            </div>
+            <div class="textslider">
+               <div id="text2" class="textslidertop">
+                  <span style="font-size:40px; font-weight: 900;line-height:0.9;">2</span>Open an account.
+               </div>
+               <div id="texttwo2" class="textsliderbottom">Our 5 minutes account opening process consists of four basic
+                  steps which includes verifying identity, address, income and activity.</div>
+            </div>
+            <div class="textslider">
+               <div id="text3" class="textslidertop"><span
+                     style="font-size:40px; font-weight: 900;line-height:0.9;">3</span>Select wrapper.
+               </div>
+               <div id="texttwo3" class="textsliderbottom">You may invest in our portfolios via your selected wrappers
+                  which may be an SIPP, ISA, GIA.</div>
+            </div>
+            <div class="textslider">
+               <div id="text4" class="textslidertop"><span
+                     style="font-size:40px; font-weight: 900;line-height:0.9;">4</span>Select ETF or ESG ETF portfolio.
+               </div>
+               <div id="texttwo4" class="textsliderbottom">While investing, if you want an ESG portfolio, you would be
+                  able to select a <i>pari pasu</i> normal or an ESG portfolio.</div>
+            </div>
+            <div class="textslider">
+               <div id="text5" class="textslidertop"><span
+                     style="font-size:40px; font-weight: 900;line-height:0.9;">5</span>Apply swiftEngine.
+               </div>
+               <div id="texttwo5" class="textsliderbottom">While strategic asset allocation is set, use our deep
+                  learning algorithim <b><i>swift</i>Engine</b> to tactically drive asset allocation to generate
+                  outperformance.</div>
+            </div>
+            <div class="textslider">
+               <div id="text6" class="textslidertop"><span
+                     style="font-size:40px; font-weight: 900;line-height:0.9;">6</span>Set your rebalancing period.
+               </div>
+               <div id="texttwo6" class="textsliderbottom">Right from deciding parameters of <b><i>swift</i>Engine</b>
+                  to frequency of rebalancing, our systems will allow to you adjust and setup automated processes.</div>
+            </div>
+            <div class="textslider">
+               <div id="text7" class="textslidertop"><span
+                     style="font-size:40px; font-weight: 900;line-height:0.9;">7</span>Manage your portfolio.
+               </div>
+               <div id="texttwo7" class="textsliderbottom">You can monitor performance, start and stop
+                  <b><i>swift</i>Engine</b> and change or add portfolios.
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="fourthpartright" data-aos="fade-down" data-aos-delay="200">
+         <div class="fourthparttop">
+            <div id="box1" class="boxslider">Quality ETFs <span>We source the lowest cost ETFs for you</span></div>
+            <div id="box2" class="boxslider">Best Execution <span>We have algorithms to minimize market impact</span>
+            </div>
+            <div id="box3" class="boxslider">One‑click Rebalancing <span>One‑click rebalancing to keep your portfolio on
+                  track</span></div>
+            <div id="box4" class="boxslider">Wrappers <span>SIPP, GIA, ISA, JISA</span></div>
+         </div>
+         <div class="fourthpartbottomtitletwo" data-aos="fade-up">Amazing Results.</div>
+      </div>
+   </div>
+   <div class="fifthpart">
+      <div class="fifthpartcenter">
+         <div class="fifthpartcenterleft">Delivery via awesome apps and web interface</div>
+         <div class="fifthpartcenterright" data-aos="fade-up" data-aos-delay="200" id="webimage"><img
+               src="./images/chart.png"></div>
+         <div class="fifthpartcenterright" data-aos="fade-up" data-aos-delay="200" id="mobileimage"><img
+               src="./images/chartmobile.png"></div>
+      </div>
+   </div>
+   <div class="rect6" id="rect6">
+      <div class="rect6firstrow">Still got questions? We're here to help.</div>
+      <nav class="accordion arrows">
+         <input type="radio" name="accordion" id="cb1" />
+         <section class="box">
+            <label class="box-title" for="cb1">Can I invest in custom portfolios?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">While we do have to capability to offer investment in custom portfolios, the complexity that this brings to wealth journey is not something we think we are comfortable to offer.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb2" />
+         <section class="box">
+            <label class="box-title" for="cb2">Can I make automated periodic investments??</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">We are working on the direct debit feature as we believe a systematic investment plan (SIP) is the best way to dollar cost average your investments.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb3" />
+         <section class="box">
+            <label class="box-title" for="cb3">What is the minimum investment required to invest with Swiftfolios?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">To maintain a good wealth service, we have set the minimum investment amount in a portfolio to £10,000.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb4" />
+         <section class="box">
+            <label class="box-title" for="cb4">What reports will I get and will there be periodic reviews?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">You may download factsheets and capital gains report from the app or website.
+               Additionally, every Sunday, you will receive a statement on your email.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb5" />
+         <section class="box">
+            <label class="box-title" for="cb5">How do you chose your ETFs?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Tracking error, average bid and ask spread, daily liquidity, and unit price, in order, go into the selection of ETFs.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb6" />
+         <section class="box">
+            <label class="box-title" for="cb6">Does the deep learning machine have complete control of making investments?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Absolutely not, you can turn on and turn off the <b><i>swift</i>Engine</b> (our deep learning model) anytime you want. You can even set the degree to which the deep learning model can deviate from the Strategic Asset Allocation.</div>
+         </section>
+         <input type="radio" name="accordion" id="acc-close" />
+      </nav>
+      <div class="rect6secondrow"><a href="" target="_blank"><span>Reach Us</a></span></div>
+   </div>
+   <div class="rect7" id="rect7">
+      <div class="rect7inner">
+         <div class="rect7secondrow">For a GBP <input type="text" id="amount" onkeyup="feescalculate()">investment,
+            total yearly costs will be approximately <input type="text" id="fees"></div>
+         <div class="rect7firstrow">0.50<span>%</span></div>
+         <div class="rect7secondrow">Flat transparent fees</div>
+         <div class="rect7thirdrow">plus<br><br><span>Custody fees<br>0.10%</span><br><br>plus<br><br><span>Fund
+               costs<br>0.25%</span><br><br>plus<br><br><span>Market spread<br>0.05%</span></div>
+         <div class="rect7fourthrow">As with all investing, your capital is at risk. The value of your portfolio can go
+            down as well as up and you may get backless than you invest. Tax treatment depends on your individual
+            circumstances and may be subject to change in the future.</div>
+      </div>
+   </div>
+   <div class="rect5" id="rect5">
+      <div class="rect5firstsecondrow">
+         <div class="rect5firstsecondrowleft" data-aos="fade-up">
+            <div class="rect5firstsecondrowleftone"><img src="./images/SD.jpg"></div>
+            <div class="rect5firstsecondrowlefttwogrey">
+               <div class="rect5firstsecondrowtitle">About the Founder- Sap</div>
+               <div class="rect5firstsecondrowtwotwo">
+                  Postgraduate in Management from <b>Imperial College London, UK</b>
+                  and a <b>CFA Charterholder</b> with <b>15</b> years of experience. <br><br>Along
+                  with Yottol, he is the portfolio manager of a <b>private wealth
+                     management</b> services firm @ KGS which engages with an elite list
+                  of HNI entrepreneurs and family offices to implement their private
+                  wealth investment policy which involves discretionary fund advisory.<br><br>
+                  Prior to KGS, he worked in a <b>$7 Bn asset management house (Octopus) in London, UK,
+                     investing globally (multi-asset class) and at FQS Capital Partners</b> where he was
+                  responsible for quant and risk analytics.
+               </div>
+            </div>
+         </div>
+         <div class="rect5firstsecondrowleft" data-aos="fade-down">
+            <div class="rect5firstsecondrowlefttwo">
+               <div class="rect5firstsecondrowtwoone"><i>built on</i><span>Principles of Stewardship</span></div>
+               <div class="rect5firstsecondrowtwotwo">
+                  <b>Fiduciary Duty</b><br><b>Ethical</b><br><b>Transparent</b><br><br>
+
+                  Sap has dedicated his career to serve those
+                  whose money he oversees in any form, directly
+                  or indirectly, however small, with absolute honesty
+                  to ensuring better investing experiences over
+                  one and half decades. <br><br>
+
+                  He thinks this responsibility is nothing short of
+                  a deep life purpose, a cause of a noble nature.
+                  Money, which is the medium of most efficient information,
+                  should be given it’s due regard, whether that represents
+                  fulfillment of goals, comfortable retirement, or a
+                  meaningful inheritance.
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="footer"></div>
+
+   <script>
+      let pos = "";
+      let al = "";
+      $(document).ready(function () {
+         if ($(window).width() < 768) {
+            pos = 'bottom';
+            al = 'start';
+            cutpercentage=110;
+         }
+         else if ($(window).width() > 2000) {
+            pos = 'right';
+            al = 'end';
+            cutpercentage=160;
+         }
+         else {
+            pos = 'right';
+            al = 'end';
+            cutpercentage=130;
+         }
+      });
+      let CHART_REF = false;
+      $(document).ready(function () {
+         document.getElementById("charttext").innerHTML = '<span style="color: violet;font-weight: 900;">Violet</span> Portfolio<br>Mixed Asset<br><span>0-20% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">4-6%</span>';
+         removeborder();
+         document.getElementById("profile1").style.background = "#e8e8e8";
+         var percentageData = [60, 20, 10, 6, 2, 2];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (60%)', 'UK Bonds (20%)', 'Money Market (10%)', 'Developed Equities ex Europe (6%)', 'UK Equities (2%)', 'Europe Equities ex UK (2%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+      });
+   
+      function removeborder() {
+         document.getElementById("profile1").style.background = "#f1f1f141";
+         document.getElementById("profile2").style.background = "#f1f1f141";
+         document.getElementById("profile3").style.background = "#f1f1f141";
+         document.getElementById("profile4").style.background = "#f1f1f141";
+         document.getElementById("profile5").style.background = "#f1f1f141";
+      }
+   
+      function profile1() {
+         document.getElementById("charttext").innerHTML = '<span style="color: violet;font-weight: 900;">Violet</span> Portfolio<br>Mixed Asset<br><span>0-20% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">3-5%</span>';
+         removeborder();
+         document.getElementById("profile1").style.background = "#e8e8e8";
+         var percentageData = [60, 20, 10, 6, 2, 2];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#0ACDFF','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (60%)', 'UK Bonds (20%)', 'Money Market (10%)', 'Developed Equities ex Europe (6%)', 'UK Equities (2%)', 'Europe Equities ex UK (2%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+   
+      }
+   
+      function profile2() {
+         document.getElementById("charttext").innerHTML = '<span style="color: #b66ced;font-weight: 900;">Indigo</span> Portfolio<br>Mixed Asset<br><span>20-35% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">4-6%</span>';
+         removeborder();
+         document.getElementById("profile2").style.background = "#e8e8e8";
+         var percentageData = [40, 20, 10, 15, 8, 5, 2];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#0ACDFF','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (40%)', 'UK Bonds (20%)', 'Money Market (10%)', 'Developed Equities ex Europe (15%)', 'UK Equities (8%)', 'Europe Equities ex UK (5%)', 'Emerging Market Equities (2%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+   
+      }
+   
+      function profile3() {
+         document.getElementById("charttext").innerHTML = '<span style="color: #00a8ff;font-weight: 900;">Blue</span> Portfolio<br>Mixed Asset<br><span>35-60% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">6-8%</span>';
+         removeborder();
+         document.getElementById("profile3").style.background = "#e8e8e8";
+         var percentageData = [30, 10, 10, 25, 15, 7, 3];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#0ACDFF','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (30%)', 'UK Bonds (10%)', 'Money Market (10%)', 'Developed Equities ex Europe (25%)', 'UK Equities (15%)', 'Europe Equities ex UK (7%)', 'Emerging Market Equities (3%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+   
+      }
+   
+      function profile4() {
+         document.getElementById("charttext").innerHTML = '<span style="color: #67d098;font-weight: 900;">Green</span> Portfolio<br>Mixed Asset<br><span>60-85% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">7-10%</span>';
+         removeborder();
+         document.getElementById("profile4").style.background = "#e8e8e8";
+         var percentageData = [15, 7.5, 7.5, 35, 20, 10, 5];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#0ACDFF','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (15%)', 'UK Bonds (7.5%)', 'Money Market (7.5%)', 'Developed Equities ex Europe (35%)', 'UK Equities (20%)', 'Europe Equities ex UK (10%)', 'Emerging Market Equities (5%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+   
+      }
+   
+      function profile5() {
+         document.getElementById("charttext").innerHTML = '<span style="color: #ffca00;font-weight: 900;">Yellow</span> Portfolio<br>Mixed Asset<br><span>85-100% Equity</span><br><br>Expected Return<br><span style="font-weight: 900;font-size:1rem;">9-12%</span>';
+         removeborder();
+         document.getElementById("profile5").style.background = "#e8e8e8";
+         var percentageData = [3, 2, 5, 50, 20, 10, 10];
+         var backgroundColours = ['#1D9BF0', '#00D3E0', '#9BF48A', '#F9F871','#0ACDFF','#DFB2F4','#BACDDE'];
+         var chartLabels = ['Global x UK Bonds (3%)', 'UK Bonds (2%)', 'Money Market (5%)', 'Developed Equities ex Europe (50%)', 'UK Equities (20%)', 'Europe Equities ex UK (10%)', 'Emerging Market Equities (10%)'];
+         drawChart(percentageData, backgroundColours, chartLabels);
+   
+      }
+   </script>
+   
+   <script>
+      function drawChart(percentageData, backgroundColours, chartLabels) {
+         Chart.defaults.color = '#011627b3';
+         const ctx = document.getElementById('myChart');
+         const data = {
+            datasets: [{
+               data: percentageData,
+               backgroundColor: backgroundColours,
+               hoverOffset: 5,
+            }],
+            labels: chartLabels
+         };
+         const config = {
+            type: 'doughnut',
+            data: data,
+            options: {
+               responsive: true,
+               aspectRatio: false,
+               plugins: {
+                  title: {
+                     display: false
+                  },
+                  tooltip: {
+                     backgroundColor: '#f1f1f1',
+                     borderColor: '#e8e8e8',
+                     borderWidth: 1,
+                     titleColor: '#011627',
+                     bodyColor: '#011627',
+                     bodyFont: {
+                        family: 'Open Sans',
+                     },
+                     displayColors: false,
+                     padding: {
+                        left: 10,
+                        right: 10,
+                        top: 10,
+                        bottom: 10,
+                     }
+                  },
+                  legend: {
+                     display: true,
+                     position: pos,
+                     align: al,
+                     borderRadius: 30,
+                     labels: {
+                        color: 'rgb(1, 22, 39, 1)',
+                        boxWidth: 20,
+                        boxHeight: 20,
+                        padding: 15,
+                        font: {
+                           size: 12,
+                           weight: 600,
+                           family: 'Open Sans',
+                        }
+                     }
+                  },
+               },
+               layout: {
+                  padding: {
+                     left: 0,
+                  },
+                  position: 'left',
+               },
+               borderRadius: 30,
+               cutout: cutpercentage,
+               borderColor: 'none',
+               borderWidth: 0
+            }
+         };
+         //ctx.destroy();
+         if (CHART_REF) {
+            CHART_REF.destroy();
+         }
+   
+         CHART_REF = new Chart(ctx, config);
+   
+   
+   
+   
+      }
+   </script>
+   <script>
+      function removebackground() {
+         document.getElementById("box1").style.background = "#0D005F";
+         document.getElementById("box2").style.background = "#0D005F";
+         document.getElementById("box3").style.background = "#0D005F";
+         document.getElementById("box4").style.background = "#0D005F";
+      }
+      var looparray = [
+         function box1() {
+            removebackground();
+            document.getElementById("box1").style.background = "#000FFF";
+            setTimeout(box1, 3000);
+         },
+         function box2() {
+            removebackground();
+            document.getElementById("box2").style.background = "#000FFF";
+            setTimeout(box2, 3000);
+         },
+         function box3() {
+            removebackground();
+            document.getElementById("box3").style.background = "#000FFF";
+            setTimeout(box3, 3000);
+         },
+         function box4() {
+            removebackground();
+            document.getElementById("box4").style.background = "#000FFF";
+            setTimeout(box4, 3000);
+         }
+      ];
+      var timeoutHandle = undefined;
+      function showHeadline(idx) {
+         looparray[idx](idx);
+         timeoutHandle = setTimeout(showHeadline, 3000, (idx + 1) % looparray.length);
+      }
+   
+      showHeadline(0);
+   
+   </script>
+   
+   <script>
+      function removecirclentext() {
+         document.getElementById("circle1").style.background = "#f1f1f141";
+         document.getElementById("circle2").style.background = "#f1f1f141";
+         document.getElementById("circle3").style.background = "#f1f1f141";
+         document.getElementById("circle4").style.background = "#f1f1f141";
+         document.getElementById("circle5").style.background = "#f1f1f141";
+         document.getElementById("circle6").style.background = "#f1f1f141";
+         document.getElementById("circle7").style.background = "#f1f1f141";
+         document.getElementById("text1").style.display = "none";
+         document.getElementById("text2").style.display = "none";
+         document.getElementById("text3").style.display = "none";
+         document.getElementById("text4").style.display = "none";
+         document.getElementById("text5").style.display = "none";
+         document.getElementById("text6").style.display = "none";
+         document.getElementById("text7").style.display = "none";
+         document.getElementById("texttwo1").style.display = "none";
+         document.getElementById("texttwo2").style.display = "none";
+         document.getElementById("texttwo3").style.display = "none";
+         document.getElementById("texttwo4").style.display = "none";
+         document.getElementById("texttwo5").style.display = "none";
+         document.getElementById("texttwo6").style.display = "none";
+         document.getElementById("texttwo7").style.display = "none";
+      }
+      var looparraytwo = [
+         function circlentext1() {
+            removecirclentext();
+            document.getElementById("circle1").style.background = "#ffffff";
+            document.getElementById("text1").style.display = "flex";
+            document.getElementById("texttwo1").style.display = "block";
+            setTimeout(circlentext1, 3000);
+         },
+         function circlentext2() {
+            removecirclentext();
+            document.getElementById("circle2").style.background = "#ffffff";
+            document.getElementById("text2").style.display = "flex";
+            document.getElementById("texttwo2").style.display = "block";
+            setTimeout(circlentext2, 3000);
+         },
+         function circlentext3() {
+            removecirclentext();
+            document.getElementById("circle3").style.background = "#ffffff";
+            document.getElementById("text3").style.display = "flex";
+            document.getElementById("texttwo3").style.display = "block";
+            setTimeout(circlentext3, 3000);
+         },
+         function circlentext4() {
+            removecirclentext();
+            document.getElementById("circle4").style.background = "#ffffff";
+            document.getElementById("text4").style.display = "flex";
+            document.getElementById("texttwo4").style.display = "block";
+            setTimeout(circlentext4, 3000);
+         },
+         function circlentext5() {
+            removecirclentext();
+            document.getElementById("circle5").style.background = "#ffffff";
+            document.getElementById("text5").style.display = "flex";
+            document.getElementById("texttwo5").style.display = "block";
+            setTimeout(circlentext5, 3000);
+         },
+         function circlentext6() {
+            removecirclentext();
+            document.getElementById("circle6").style.background = "#ffffff";
+            document.getElementById("text6").style.display = "flex";
+            document.getElementById("texttwo6").style.display = "block";
+            setTimeout(circlentext6, 3000);
+         },
+         function circlentext7() {
+            removecirclentext();
+            document.getElementById("circle7").style.background = "#ffffff";
+            document.getElementById("text7").style.display = "flex";
+            document.getElementById("texttwo7").style.display = "block";
+            setTimeout(circlentext7, 3000);
+         }
+      ];
+      var timeoutHandletwo = undefined;
+      function showHeadlinetwo(idxtwo) {
+         looparraytwo[idxtwo](idxtwo);
+         timeoutHandletwo = setTimeout(showHeadlinetwo, 3000, (idxtwo + 1) % looparraytwo.length);
+      }
+   
+      showHeadlinetwo(0);
+   
+   </script>
+   <script>
+      // A $( document ).ready() block.
+      $(document).ready(function () {
+         document.getElementById("amount").value = 10000;
+         feescalculate();
+      });
+      function feescalculate() {
+         var a = document.getElementById("amount").value;
+         var fees = a * 0.90 / 100;
+         document.getElementById("fees").value = fees.toFixed(0);
+      }
+   
+   </script>
+   
+   <script>
+      function removerevolvingtext() {
+         document.getElementById("revolvingtext1").style.display = "none";
+         document.getElementById("revolvingtext2").style.display = "none";
+      }
+      var looparraythree = [
+         function removerevolvingtext1() {
+            removerevolvingtext();
+            document.getElementById("revolvingtext1").style.display = "block";
+            setTimeout(removerevolvingtext1, 4000);
+         },
+         function removerevolvingtext2() {
+            removerevolvingtext();
+            document.getElementById("revolvingtext2").style.display = "block";
+            setTimeout(removerevolvingtext2, 4000);
+         }
+      ];
+      var timeoutHandlethree = undefined;
+      function showHeadlinethree(idxthree) {
+         looparraythree[idxthree](idxthree);
+         timeoutHandlethree = setTimeout(showHeadlinethree, 4000, (idxthree + 1) % looparraythree.length);
+      }
+   
+      showHeadlinethree(0);
+   
+   </script>
+   <script>
+      $('.firstpartrightoneleft').each(function () {
+         $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+         }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+               $(this).text(Math.ceil(now));
+            }
+         });
+      });
+   </script>
+   
+   <script>
+      AOS.init();
+   </script>
+   <script>
+      function openmenu() {
+          document.getElementById("menulist").style.display = "block";
+          document.getElementById("closemenu").style.display = "block";
+   
+      }
+      function closemenu() {
+          document.getElementById("menulist").style.display = "none";
+          document.getElementById("closemenu").style.display = "none";
+   
+      }
+      function homepage(){
+          window.location = "https://www.swiftfolios.co.uk";
+      }
+   </script>
+
+   <script>
+      $(document).ready(function() {
+         $.ajax({
+            type: "GET",
+            "headers": {
+                 "accept": "application/json",
+                 "Access-Control-Allow-Origin":"*"
+             },
+            url: "./commonScripts/footer.html",
+            data: {},
+            success: function (data) {
+               console.log(data);
+               $('#footer').html(data);
+            }
+         });
+      });
+   </script>
+</body>
+
+</html>
+

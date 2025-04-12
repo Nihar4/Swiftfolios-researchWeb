@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Swiftfolios- Machine Aided Intelligent Investing</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+   <script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <meta property="og:description" content="Machine Aided Intelligent Investing" />
+   <meta property="og:url" content="http://www.swiftfolios.co.uk" />
+   <meta property="og:image" itemprop="image" content="" />
+   <meta property="og:image:type" content="image/png">
+   <meta name="theme-color" content="#ffffff">
+   <link rel="stylesheet" href="./aar.css">
+   <link rel="stylesheet" href="./commonScripts/header.css">
+</head>
+
+<body>
+   <div class="webheader">
+      <div class="left">
+          <img onclick="openmenu()" src="https://www.swiftfolios.co.uk/static-content/commonScripts/assets/menu.svg">
+          <div class="brand-logo" onclick="homepage()"><span>Swift</span>folios</div>
+          <img id="closemenu" onclick="closemenu()" src="https://www.swiftfolios.co.uk/static-content/commonScripts/assets/close.svg">
+          <ul id="menulist">
+              <li><i>swift</i>Engine</li>
+              <!-- <li>Accounts</li>
+              <li>Portfolios</li>
+              <li>Costs</li> -->
+              <!-- <li>Research Platform</li> -->
+              <!-- <li>Help</li>
+              <li>Education</li> -->
+          </ul>
+      </div>
+      <div class="right">
+          <div class="signup"><a href="https://www.swiftfolios.co.uk/signup">Create Account</a></div>
+          <div class="login"><a href="https://www.swiftfolios.co.uk/login">Login</a></div>
+      </div>
+  </div>
+   <div class="firstpart">
+      <div class="firstpartone">
+         <div class="firstpartleftone">Multi- asset<br>tactical asset allocation<br>
+            <span style="font-style: normal;font-size: 14px;letter-spacing: -1px;">with</span><b>deep learning algorithms</b>
+            <span style="font-style: italic;font-size: 20px;letter-spacing: -1px;">for asset allocators.</span>
+         </div>
+      </div>
+      <div class="firstparttwo">
+         <div class="firstpartlefttwo">Unfolding and simplifying complex patterns to drive<span>Outperformance</span></div>
+         <div class="firstpartrighttwo">Built on our ground breaking deep learning AI/ML
+            model<span><i>swift</i>Engine<img src="./images/registered.svg"></span></div>
+      </div>
+      <div class="firstpartfour">To be used as a guide only.</div>
+   </div>
+   <div class="fourthpart">
+      <div class="fourthpartleft">
+            <div class="textslider">
+               <div id="text1" class="textslidertop">create multiple strategic portfolios</div>
+            </div>
+            <div class="textslider">
+               <div id="text2" class="textslidertop">define your own asset classes</div>
+            </div>
+            <div class="textslider">
+               <div id="text3" class="textslidertop">maintain asset class weights</div>
+            </div>
+            <div class="textslider">
+               <div id="text4" class="textslidertop">customise overall active weight</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="fifthpart">
+      <div class="fifthpartcenter" id="fifthpartcenterweb">
+         <div class="fifthpartcenterleft">#inAction</div>
+         <div class="fifthpartcenterright" data-aos="fade-up" data-aos-delay="200" id="webimage">
+            <div class="fifthpartradio1" onmouseenter="fifthpartradio1()" onmouseleave="fifthpartradio1remove()">.</div>
+            <div id="fifthpartradiotext1">Maintain multiple strategies.</div>
+            <div class="fifthpartradio2" onmouseenter="fifthpartradio2()" onmouseleave="fifthpartradio2remove()">.</div>
+            <div id="fifthpartradiotext2">Create new strategies contructed on distinct Strategic Asset Allocations.</div>
+            <div class="fifthpartradio3" onmouseenter="fifthpartradio3()" onmouseleave="fifthpartradio3remove()">.</div>
+            <div id="fifthpartradiotext3">Download reports for distribution in an easily readable format.</div>
+            <div class="fifthpartradio4" onmouseenter="fifthpartradio4()" onmouseleave="fifthpartradio4remove()">.</div>
+            <div id="fifthpartradiotext4">Define your level of portfolio active weight to scale aggressiveness of tactical allocation.</div>
+            <div class="fifthpartradio5" onmouseenter="fifthpartradio5()" onmouseleave="fifthpartradio5remove()">.</div>
+            <div id="fifthpartradiotext5">Look at model outputs and look at Tactical Allocation while maintaining asset class weights.</div>
+            <div class="fifthpartradio6" onmouseenter="fifthpartradio6()" onmouseleave="fifthpartradio6remove()">.</div>
+            <div id="fifthpartradiotext6">Export portfolios and change Strategic Asset Allocations.</div>
+            <img src="./images/dashboard.png">
+         </div>
+      </div>
+   </div>
+   <div class="fifthpart" id="fifthpartcentermobile">
+      <div class="fifthpartcenter">
+         <div class="fifthpartcenterleft">#inAction</div>
+         <div class="fifthpartcenterright1" data-aos="fade-up" data-aos-delay="200" id="webimage">
+            <div class="fifthpartradio1" onmouseenter="fifthpartradio1()" onmouseleave="fifthpartradio1remove()">.</div>
+            <div id="fifthpartradiotext1mob">Maintain multiple strategies.</div>
+            <div class="fifthpartradio2" onmouseenter="fifthpartradio2()" onmouseleave="fifthpartradio2remove()">.</div>
+            <div id="fifthpartradiotext2mob">Create new strategies contructed on distinct Strategic Asset Allocations.</div>
+            <img src="./images/dash1.png">
+         </div>
+      </div>
+      <div class="fifthpartcenter">
+         <div class="fifthpartcenterleft"></div>
+         <div class="fifthpartcenterright2" data-aos="fade-up" data-aos-delay="200" id="webimage">
+            <div class="fifthpartradio3" onmouseenter="fifthpartradio3()" onmouseleave="fifthpartradio3remove()">.</div>
+            <div id="fifthpartradiotext3mob">Download reports for distribution in an easily readable format.</div>
+            <img src="./images/dash2.png">
+         </div>
+      </div>
+      <div class="fifthpartcenter">
+         <div class="fifthpartcenterleft"></div>
+         <div class="fifthpartcenterright3" data-aos="fade-up" data-aos-delay="200" id="webimage">
+            <div class="fifthpartradio4" onmouseenter="fifthpartradio4()" onmouseleave="fifthpartradio4remove()">.</div>
+            <div id="fifthpartradiotext4mob">Define your level of portfolio active weight to scale aggressiveness of tactical allocation.</div>
+            <div class="fifthpartradio5" onmouseenter="fifthpartradio5()" onmouseleave="fifthpartradio5remove()">.</div>
+            <div id="fifthpartradiotext5mob">Look at model outputs and Tactical Allocation while maintaining asset class weights.</div>
+            <div class="fifthpartradio6" onmouseenter="fifthpartradio6()" onmouseleave="fifthpartradio6remove()">.</div>
+            <div id="fifthpartradiotext6mob">Export portfolios and change Strategic Asset Allocations.</div>
+            <img src="./images/dash3.png">
+         </div>
+      </div>
+   </div>
+   <div class="sixthpart" data-aos="fade-up" data-aos-delay="200">
+      Liquid Alternatives Strategy Allocation<span>with our variance decomposition optimisation algorithims</span>
+   </div>
+   <div class="rect6" id="rect6">
+      <div class="rect6firstrow">Questions?</div>
+      <nav class="accordion arrows">
+         <input type="radio" name="accordion" id="cb1" />
+         <section class="box">
+            <label class="box-title" for="cb1">How is Strategic Asset Allocations set?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Strategic Asset Allocations are set by the user. In future, with more understanding, 
+               we will have more clarity into bringing third party data from IA or Morningstar or other asset 
+               allocation publishers.
+            </div>
+         </section>
+         <input type="radio" name="accordion" id="cb2" />
+         <section class="box">
+            <label class="box-title" for="cb2">How are tactical asset allocations set?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Tactical asset allocations are set based on a combination of risk weighting and directional indication our deep learning models provide.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb3" />
+         <section class="box">
+            <label class="box-title" for="cb3">Will I be able to integrate our portfolios with Swiftfolios?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">At this moment, no. However, we are working on APIs and Excel Addins as we speak.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb4" />
+         <section class="box">
+            <label class="box-title" for="cb4">Can I see performance of the model?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Yes, we will be maintaining iNAVs of the Strategic Asset Allocation portfolio and Tactical Asset Allocation portfolio and you should be able to view them relative to each other.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb5" />
+         <section class="box">
+            <label class="box-title" for="cb5">Which ETFs are available?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">All Vanguard, iShares and SPDR ETFs will be available.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb6" />
+         <section class="box">
+            <label class="box-title" for="cb6">Can I set my own asset class names?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Yes, we understand that asset classes can be defined in varying classifications and we want to provide you the flexibility to define yours.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb7" />
+         <section class="box">
+            <label class="box-title" for="cb7">What Liquid Alternatives indices do we use?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">We work with EurekaHedge Indices as representatives of hedge fund strategies.</div>
+         </section>
+         <input type="radio" name="accordion" id="cb8" />
+         <section class="box">
+            <label class="box-title" for="cb8">What is variance decomposition optimisation algorithim?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">Variance decomposition optimisation is an iteriative process where allocations are adjusted so that the entire portfolio has the best and most uniform orthogonal factors given a risk and return target.</div>
+         </section>
+         <input type="radio" name="accordion" id="acc-close" />
+      </nav>
+      <div class="rect6secondrow"><a href="https://www.swiftfolios.co.uk/signup" target="_self"><span>Sign Up</a></span></div>
+   </div>
+   <div class="rect7" id="rect7">
+      <div class="rect7inner">
+         <div class="rect7firstrow">free<span>*</span></div>
+         <div class="rect7secondrow">For the first 3 months</div>
+         <div class="rect7thirdrow">After 3 months<br><br>
+            <span>GBP 500<br>per month</span><br><br><i>or</i><br><br>
+            <span>GBP 1,000<br>per quarter</span><br><br><i>or</i><br><br>
+            <span>GBP 3,000<br>anually</span><br><br>
+         </div>
+      </div>
+   </div>
+   <div id="footer"></div>
+   <script>
+      function removecirclentext() {
+         document.getElementById("text1").style.display = "none";
+         document.getElementById("text2").style.display = "none";
+         document.getElementById("text3").style.display = "none";
+         document.getElementById("text4").style.display = "none";
+         }
+      var looparraytwo = [
+         function circlentext1() {
+            removecirclentext();
+            document.getElementById("text1").style.display = "flex";
+            setTimeout(circlentext1, 3000);
+         },
+         function circlentext2() {
+            removecirclentext();
+            document.getElementById("text2").style.display = "flex";
+            setTimeout(circlentext2, 3000);
+         },
+         function circlentext3() {
+            removecirclentext();
+            document.getElementById("text3").style.display = "flex";
+            setTimeout(circlentext3, 3000);
+         },
+         function circlentext4() {
+            removecirclentext();
+            document.getElementById("text4").style.display = "flex";
+            setTimeout(circlentext4, 3000);
+         },
+      ];
+      var timeoutHandletwo = undefined;
+      function showHeadlinetwo(idxtwo) {
+         looparraytwo[idxtwo](idxtwo);
+         timeoutHandletwo = setTimeout(showHeadlinetwo, 3000, (idxtwo + 1) % looparraytwo.length);
+      }
+   
+      showHeadlinetwo(0);
+   
+   </script>
+   <script>
+      $('.firstpartrightoneleft').each(function () {
+         $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+         }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+               $(this).text(Math.ceil(now));
+            }
+         });
+      });
+   </script>
+   <script>
+      function fifthpartradio1remove(){document.getElementById("fifthpartradiotext1").style.display="none"};
+      function fifthpartradio1(){document.getElementById("fifthpartradiotext1").style.display="block";}
+      function fifthpartradio2remove(){document.getElementById("fifthpartradiotext2").style.display="none"};
+      function fifthpartradio2(){document.getElementById("fifthpartradiotext2").style.display="block";}
+      function fifthpartradio3remove(){document.getElementById("fifthpartradiotext3").style.display="none"};
+      function fifthpartradio3(){document.getElementById("fifthpartradiotext3").style.display="block";}
+      function fifthpartradio4remove(){document.getElementById("fifthpartradiotext4").style.display="none"};
+      function fifthpartradio4(){document.getElementById("fifthpartradiotext4").style.display="block";}
+      function fifthpartradio5remove(){document.getElementById("fifthpartradiotext5").style.display="none"};
+      function fifthpartradio5(){document.getElementById("fifthpartradiotext5").style.display="block";}
+      function fifthpartradio6remove(){document.getElementById("fifthpartradiotext6").style.display="none"};
+      function fifthpartradio6(){document.getElementById("fifthpartradiotext6").style.display="block";}
+   </script>
+   
+   <script>
+      AOS.init();
+   </script>
+
+<script>
+   function openmenu() {
+       document.getElementById("menulist").style.display = "block";
+       document.getElementById("closemenu").style.display = "block";
+
+   }
+   function closemenu() {
+       document.getElementById("menulist").style.display = "none";
+       document.getElementById("closemenu").style.display = "none";
+
+   }
+   function homepage(){
+       window.location = "https://www.swiftfolios.co.uk";
+   }
+</script>
+
+   <script>
+      $(document).ready(function() {
+         $.ajax({
+            type: "GET",
+            "headers": {
+                 "accept": "application/json",
+                 "Access-Control-Allow-Origin":"*"
+             },
+            url: "./commonScripts/footer.html",
+            data: {},
+            success: function (data) {
+               console.log(data);
+               $('#footer').html(data);
+            }
+         });
+      });
+   </script>
+</body>
+
+</html>
+

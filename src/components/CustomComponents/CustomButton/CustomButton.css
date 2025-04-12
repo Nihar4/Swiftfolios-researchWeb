@@ -1,0 +1,18 @@
+.swift-folios-custom-btn {
+    border-radius: 45px;
+    background: #E8E8E8;
+    font-size: 12px;
+    color: #011627;
+    font-weight: 600;
+    font-family: "Open Sans";
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swift-folios-custom-btn:hover{
+    cursor: pointer;
+  }

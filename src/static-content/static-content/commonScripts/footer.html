@@ -1,0 +1,328 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Open Sans';
+        }
+
+        #footer ul {
+            list-style: none;
+            justify-content: left;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #footer a {
+            text-decoration: none;
+        }
+
+        #footericon {
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            left: 130px;
+            cursor: pointer;
+        }
+
+        #footer li {
+            cursor: hand;
+            margin-top: 0px;
+            /* height: 0px; */
+            background-color: #fff;
+            border-radius: 0px;
+            font-weight: 500;
+            font-size: 11px;
+            margin-bottom: 0px;
+            padding: 0px;
+            /* padding-top: 3px; */
+            background-color: #ffffff;
+            height: auto;
+        }
+
+        #mainfooter {
+            width: 90%;
+            background-color: #ffffff;
+            z-index: 100;
+            height: fit-content;
+            transition: all 0.75s ease-in-out;
+            border-top: 1px solid #e8e8e8;
+            margin: auto;
+        }
+
+        #footer {
+            width: 100%;
+            background-color: #ffffff;
+            color: #011627;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #closefooter {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            cursor: pointer;
+        }
+
+        #closefooter img {
+            height: 17px;
+        }
+
+        #footer p {
+            font-size: 11px;
+            color: #808080;
+            text-align: center;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        #footer p span {
+            line-height: 50px;
+            color: #808080;
+        }
+
+        #links {
+            font-size: 12px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 0 0 0 20;
+        }
+
+        #links a {
+            color: #011627;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        #links h1 {
+            font-size: 14px;
+            color: #808080;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .shortcuts {
+            min-width: 150px;
+            margin-top: 20px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h1s {
+            font-size: 10px;
+            color: #808080;
+            font-weight: 500;
+        }
+
+        #linksright {
+            display: flex;
+            align-items: baseline;
+            width: 30%;
+            justify-content: space-between;
+        }
+
+        #sharelinks {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            min-width: 100px;
+            max-width: 160px;
+        }
+
+        #profilelink {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            min-width: 100px;
+            max-width: 160px;
+        }
+
+        #social svg {
+            width: 20px;
+        }
+
+        #social img,
+        #social svg {
+            width: 35px;
+        }
+
+        .applinks a {
+            font-weight: 900;
+            font-size: 14px;
+            letter-spacing: -1px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .applinks img {
+            height: 35px;
+        }
+
+        .applinks {
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .backoffice {
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .backoffice img {
+            height: 35px;
+        }
+
+        #footer h1 {
+            color: rgba(1, 22, 39, 0.70);
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+
+        #footer a {
+            color: rgba(1, 22, 39, 0.70);
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.6px;
+        }
+
+        .statutorystatement {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #011627;
+            width: 100%;
+            letter-spacing: -0.5px;
+            margin-bottom: 5%;
+        }
+
+
+        @media only screen and (max-width:768px) {
+            #mainfooter {
+                height: fit-content;
+                overflow: auto;
+            }
+
+            #links {
+                -ms-flex-pack: distribute;
+                justify-content: space-around;
+                font-size: 10px;
+                text-align: left;
+                padding-left: 0px;
+            }
+
+            #links h1 {
+                font-size: 15px;
+            }
+
+            #footer p {
+                font-size: 8px;
+            }
+
+            #footer {
+                width: 100%;
+                background-color: #ffffff;
+                color: #011627;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            #linksright {
+                display: flex;
+                align-items: baseline;
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .statutorystatement {
+                margin-top: 15px;
+                font-size: 12px;
+                color: #011627;
+                width: 100%;
+                letter-spacing: -0.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer id="mainfooter">
+        <!-- <div id="closefooter" onclick="closefooter();"><img src="icons/closewhite.svg"></div> -->
+        <div id="footer">
+            <!-- <div id="linksleft">
+                <div id="about" class="shortcuts">
+                    <ul>
+                        <li>
+                            <h1>Important Information</h1>
+                        </li>
+                        <li><a href="">Statutory disclosures</a></li>
+                        <li><a href="">Important investment notes</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Cookie policy</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Refund & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div id="linksright">
+                <div id="social" class="shortcuts">
+                    <h1>Reach Us</h1>
+                    <div id="profilelinks">
+                        <!-- <a href="https://api.whatsapp.com/send?phone=918160080658" target="_blank"><img src="https://www.yottol.com/homepageImages/wcopy.svg"></a> -->
+                        <a href="mailto:shout@yottol.com?Subject=Hello!"><img src="https://www.yottol.com/homepageImages/email.svg"></a>
+                        <a href="tel:+44 020 7193 8000"><img src="https://www.yottol.com/homepageImages/phone.svg"></a>
+
+                    </div>
+                </div>
+                <div class="applinks">
+                    <h1>Investor App</h1>
+                    <a href="" target="_blank"><img src="https://www.yottol.com/homepageImages/play.svg"></a>
+                </div>
+                <div class="backoffice">
+                    <h1>Backoffice</h1>
+                    <a href="" target="_blank"><img src="https://www.yottol.com/homepageImages/login.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="statutorystatement">Investments are subject to market risks. Please read the about funds carefully before investing. Past performance is not indicative of future returns. Please consider your specific investment requirements before choosing a fund, or designing a portfolio that suits your needs. The value of investments can go down in value as well as up, so you could get back less than you invest. It is therefore important that you understand the risks and commitments. This website aims to provide information to help you make your own informed decisions. It does not provide personal advice based on your circumstances. If you are unsure of how suitable an investment is for you, please seek personal advice from your Financial Advisor. Nothing in this website shall be considered a solicitation to buy or an offer to sell a security, or any other product or service, to any person in any jurisdiction where such offer, solicitation, purchase or sale would be unlawful under the laws of such jurisdiction. Tax rules referred to are those that currently apply unless otherwise stated, they can change over time and any benefit to you will depend on your circumstances.<br><br><b>Yottol Technologies, Company number 14987252</b></div>
+    </footer>
+</body>
+
+</html>
